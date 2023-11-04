@@ -1,4 +1,3 @@
-import { Row, Col } from "react-bootstrap";
 import { Listado } from "./components/listado/Listado";
 // obtener data de archivo baseColaboradores
 import { baseColaboradores } from "./db/BaseColaboradores";
@@ -27,6 +26,7 @@ const App = () => {
             <Buscador />
           </div>
         </section>
+        <br />
         <section className="listadoFormulario">
           <div className="listado">
             <Listado colaboradores={colaboradores} />

@@ -3,29 +3,23 @@
   flex-direction: column;
   justify-content: center;
 
-  gap: 2rem;
-  background-color: #1a1a1a;
+  background-color: #f5f5f5;
   padding: 2rem;
   height: 100vh;
   width: 100vw;
 }
 .titulo {
-  color: #ffffff;
+  color: #000000;
 }
 .hr {
   width: 50%;
-  color: #ffffff;
+  border: 1px solid #000000;
 }
 
 .formulario {
   padding: 2rem;
-  background: rgb(106, 0, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(106, 0, 255, 1) 0%,
-    rgba(166, 74, 255, 1) 88%,
-    rgba(189, 90, 255, 1) 100%
-  );
+  background: #005b99;
+  background: linear-gradient(90deg, #005b99 0%, #4e88ca 88%, #588cc7 100%);
   text-align: center;
   color: #ffffff;
   border-radius: 2rem;
