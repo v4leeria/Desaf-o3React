@@ -1,4 +1,17 @@
+.contenido {
+  width: 100%;
+}
 .formulario {
   padding: 2rem;
-  background-color: aqua;
+  background-color: #658864;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.listadoFormulario {
+  display: flex;
+  width: 100%;
+  gap: rem;
 }

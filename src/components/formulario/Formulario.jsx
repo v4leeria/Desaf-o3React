@@ -50,7 +50,7 @@ export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
 
   return (
     <Form onSubmit={onsubmit}>
-      <Form.Group className="mb-3">
+      <Form.Group>
         <Form.Control
           name="nombre"
           type="text"

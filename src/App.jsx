@@ -19,31 +19,29 @@ const App = () => {
 
   return (
     <>
-      <div className="mx-4">
+      <div className="contenido">
         <h1 className="text-start">Lista de colaboradores</h1>
-        <Row>
-          <Col sm={4}>
+        <section>
+          <div>
             {/* Crear componente Buscador */}
             <h1>Buscador</h1>
             <Buscador />
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={12} md={9}>
-            {/* Crear componente Listado */}
+          </div>
+        </section>
+        <section className="listadoFormulario">
+          <div>
             <Listado colaboradores={colaboradores} />
-          </Col>
-          <Col md={3} className="formulario">
+          </div>
+          <div className="formulario">
             <h2>Agregar colaborador</h2>
-            {/* Crear componente Formulario */}
             <Formulario
               setAlert={setAlert}
               setColaboradores={setColaboradores}
               colaboradores={colaboradores}
             />
             {alert.mensaje !== "" && <Alert>{alert.mensaje}</Alert>}
-          </Col>
-        </Row>
+          </div>
+        </section>
       </div>
     </>
   );
