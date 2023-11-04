@@ -21,14 +21,15 @@ const App = () => {
     <>
       <div className="contenido">
         <h1 className="titulo">Lista de colaboradores</h1>
+        <hr className="hr" />
         <section>
-          <div>
-            <Buscador className="buscador" />
+          <div className="buscador">
+            <Buscador />
           </div>
         </section>
         <section className="listadoFormulario">
-          <div>
-            <Listado className="listado" colaboradores={colaboradores} />
+          <div className="listado">
+            <Listado colaboradores={colaboradores} />
           </div>
           <div className="formulario">
             <h2>Agregar colaborador</h2>

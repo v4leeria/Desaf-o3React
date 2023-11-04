@@ -1,9 +1,10 @@
 import { Table } from "react-bootstrap";
+import "./Listado.css";
 
 export const Listado = ({ colaboradores }) => {
   return (
     <>
-      <Table responsive striped bordered>
+      <Table class="table table-hover">
         <thead>
           <tr>
             <th>Nombre</th>

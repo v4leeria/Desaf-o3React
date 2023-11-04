@@ -83,7 +83,6 @@ export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
           placeholder="Teléfono"
           onChange={onchange}
         />
-        <br />
         <Button variant="info" type="submit" className="w-100">
           Agregar Colaborador
         </Button>
