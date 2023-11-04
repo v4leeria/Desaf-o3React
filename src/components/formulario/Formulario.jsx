@@ -33,8 +33,13 @@ export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
         mensaje: "Deben estar llenos los campos",
       });
       return;
+    } else {
+      setAlert({
+        color: "success",
+        mensaje: "Registro exitoso",
+      });
     }
-
+    //No se están limpiando correctamente
     setFormulario({
       correo: "",
       nombre: "",
@@ -42,6 +47,7 @@ export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
       cargo: "",
       telefono: "",
     });
+
     // Agregar registro
     // id unico / UUID
     const newColaborador = { ...formulario, id: "asdasd" };
