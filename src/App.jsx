@@ -20,17 +20,15 @@ const App = () => {
   return (
     <>
       <div className="contenido">
-        <h1 className="text-start">Lista de colaboradores</h1>
+        <h1 className="titulo">Lista de colaboradores</h1>
         <section>
           <div>
-            {/* Crear componente Buscador */}
-            <h1>Buscador</h1>
-            <Buscador />
+            <Buscador className="buscador" />
           </div>
         </section>
         <section className="listadoFormulario">
           <div>
-            <Listado colaboradores={colaboradores} />
+            <Listado className="listado" colaboradores={colaboradores} />
           </div>
           <div className="formulario">
             <h2>Agregar colaborador</h2>

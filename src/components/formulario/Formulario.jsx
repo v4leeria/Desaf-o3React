@@ -50,7 +50,7 @@ export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
 
   return (
     <Form onSubmit={onsubmit}>
-      <Form.Group>
+      <Form.Group className="inputsForm">
         <Form.Control
           name="nombre"
           type="text"
@@ -77,12 +77,14 @@ export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
           onChange={onchange}
         />
         <Form.Control
+          className="inputForm"
           name="telefono"
           type="number"
           placeholder="Teléfono"
           onChange={onchange}
         />
-        <Button variant="primary" type="submit" className="w-100">
+        <br />
+        <Button variant="info" type="submit" className="w-100">
           Agregar Colaborador
         </Button>
       </Form.Group>
