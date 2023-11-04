@@ -5,6 +5,7 @@ import { baseColaboradores } from "./db/BaseColaboradores";
 import { useState } from "react";
 import { Formulario } from "./components/formulario/Formulario";
 import { Alert } from "./components/alert/Alert";
+import "./App.css";
 
 const App = () => {
   // almacenar data en un hook
