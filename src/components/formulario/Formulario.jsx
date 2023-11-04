@@ -1,6 +1,7 @@
 import { Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useState } from "react";
+import "./Formulario.css";
 
 export const Formulario = ({ setAlert, setColaboradores, colaboradores }) => {
   const [formulario, setFormulario] = useState({

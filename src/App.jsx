@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Formulario } from "./components/formulario/Formulario";
 import { Alert } from "./components/alert/Alert";
 import "./App.css";
+import Buscador from "./components/buscador/Buscador";
 
 const App = () => {
   // almacenar data en un hook
@@ -24,6 +25,7 @@ const App = () => {
           <Col sm={4}>
             {/* Crear componente Buscador */}
             <h1>Buscador</h1>
+            <Buscador />
           </Col>
         </Row>
         <Row>
@@ -31,7 +33,7 @@ const App = () => {
             {/* Crear componente Listado */}
             <Listado colaboradores={colaboradores} />
           </Col>
-          <Col md={3} className="">
+          <Col md={3} className="formulario">
             <h2>Agregar colaborador</h2>
             {/* Crear componente Formulario */}
             <Formulario

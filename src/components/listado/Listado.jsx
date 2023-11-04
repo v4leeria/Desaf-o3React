@@ -1,4 +1,5 @@
 import { Table } from "react-bootstrap";
+import "./Listado.css";
 
 export const Listado = ({ colaboradores }) => {
   //   console.table(colaboradores);
